@@ -1,6 +1,5 @@
 package com.azab.exposed
 
-import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.transactions.transaction
 
 fun main(args: Array<String>) {
@@ -9,21 +8,21 @@ fun main(args: Array<String>) {
 
     transaction {
 
-        SchemaUtils.drop(UsersTable)
-        SchemaUtils.create(UsersTable)
-
         val user = UserDao.new {
             username = "Andrii"
             email = "andrii@gmail.com"
         }
-
         user.print()
 
-        val user2 = UserDao.find { UsersTable.username eq "Andrii" }.firstOrNull()
+    }
 
-        user2?.username = "Anthony"
+    transaction {
 
-        user2?.delete()
+        val user = UserDao.find { UsersTable.username eq "Andrii" }.firstOrNull()
+        user?.username = "Anthony"
+        user?.print()
+        user?.delete()
+
     }
 
 }

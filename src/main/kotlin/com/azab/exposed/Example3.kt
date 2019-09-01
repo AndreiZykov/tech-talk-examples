@@ -11,9 +11,6 @@ fun main(args: Array<String>) {
 
     transaction {
 
-        SchemaUtils.drop(Users)
-        SchemaUtils.create(Users)
-
         val newYork = Cities.insert { it[name] = "New York" }
         val haboken = Cities.insert { it[name] = "Haboken" }
         val yonkers = Cities.insert { it[name] = "Yonkers" }
@@ -35,7 +32,9 @@ fun main(args: Array<String>) {
             it[name] = "Andrii"
             it[cityId] = yonkers[Cities.id]
         }
+    }
 
+    transaction {
         (Users innerJoin Cities)
             .slice(Users.name, Users.cityId, Cities.name)
             .select { Cities.name.eq("New York") or Users.name.eq("Andrii") }

@@ -1,36 +1,36 @@
 package com.azab.dsl
 
-class Node(var value: String? = null, var next: Node? = null)
+class Node(var value: String? = null, var node: Node? = null)
 
 fun main(args: Array<String>) {
 
     val head1 = node {
         value = "node1"
-        next = node {
+        node = node {
             value = "node2"
-            next = node {
+            node = node {
                 value = "node3"
-                next = null
+                node = null
             }
         }
     }
 
     val head2 = node {
         value = "node1"
-        next = node("node2") {
+        node = node("node2") {
 
         }
     }
 
     val head3 = node {
         value = "node1"
-        next = "node2".toNode()
+        node = "node2".toNode()
     }
 
     val head4 = node {
         value = "node1"
-        next = "node2".toNode().apply {
-            next = "node3".toNode()
+        node = "node2".toNode().apply {
+            node = "node3".toNode()
         }
     }
 

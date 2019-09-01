@@ -1,18 +1,14 @@
 package com.azab.exposed
 
-import org.jetbrains.exposed.sql.*
+import org.jetbrains.exposed.sql.insert
 import org.jetbrains.exposed.sql.transactions.transaction
 import java.util.*
-import kotlin.or
 
 fun main(args: Array<String>) {
 
     DB.init()
 
     transaction {
-
-        SchemaUtils.drop(Users)
-        SchemaUtils.create(Users)
 
         val newYork = Cities.insert { it[name] = "New York" }
         val haboken = Cities.insert { it[name] = "Haboken" }
@@ -35,7 +31,9 @@ fun main(args: Array<String>) {
             it[name] = "Andrii"
             it[cityId] = yonkers[Cities.id]
         }
+    }
 
+    transaction {
         println("SELECT * FROM USERS")
         exec("SELECT * FROM USERS") {
             val result = arrayListOf<Pair<String, String>>()
@@ -43,7 +41,9 @@ fun main(args: Array<String>) {
                 println("Name: ${it.getString("NAME")}, ID: ${it.getString("ID")}")
             }
         }
+    }
 
+    transaction {
         println()
         println("SELECT * FROM USERS WHERE NAME = 'Andrii'")
         exec("SELECT * FROM USERS WHERE NAME = 'Andrii'") {
@@ -52,7 +52,6 @@ fun main(args: Array<String>) {
                 println("Name: ${it.getString("NAME")}, ID: ${it.getString("ID")}")
             }
         }
-
     }
 
 }
