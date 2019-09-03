@@ -1,7 +1,6 @@
 package com.azab.exposed
 
-import org.jetbrains.exposed.sql.insert
-import org.jetbrains.exposed.sql.selectAll
+import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.transactions.transaction
 import java.util.*
 
@@ -12,13 +11,17 @@ fun main(args: Array<String>) {
     transaction {
         Users.insert {
             it[id] = UUID.randomUUID().toString()
-            it[name] = "Andrii"
+            it[name] = "Mike"
         }
+    }
 
-        Users.insert {
-            it[id] = UUID.randomUUID().toString()
-            it[name] = "Busto"
-        }
+
+    transaction {
+        val users1 = Users.selectAll()
+        val users2 = Users.select { Users.name like "Mike" }
+        Users.update({ Users.name eq "Mike" }) { it[name] = "" }
+        Users.deleteWhere { Users.name eq "Mike" }
+        // ...
     }
 
     transaction {

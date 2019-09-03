@@ -2,24 +2,16 @@ package com.azab.ttspark
 
 import spark.kotlin.*
 
-fun main(args: Array<String>) {
-    get("/hello") {
-        "Hello World"
-    }
+fun main() {
 
-    post("/hello") {
-        "Hello World"
-    }
+    get("/user") { "some json response" }
 
-    delete("/hello") {
-        "Hello World"
-    }
+    post("/user") { "some json response" }
 
-    put("/hello") {
-        "Hello World"
-    }
+    put("/user") { "some json response" }
 
-    patch("/hello") {
-        "Hello World"
-    }
+    patch("/user") { "some json response" }
+
+    delete("/user") { "some json response" }
+
 }

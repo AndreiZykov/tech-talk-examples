@@ -8,12 +8,19 @@ fun main(args: Array<String>) {
 
     transaction {
 
-        val user = UserDao.new {
-            username = "Andrii"
-            email = "andrii@gmail.com"
+        UserDao.new {
+            username = "Mike"
+            email = "mike@gmail.com"
         }
-        user.print()
 
+        UserDao.findById(1L)
+
+        val user = UserDao.find { UsersTable.username eq "Mike"}.firstOrNull()
+
+        user?.username = "Ike"
+        user?.email = "ike@gmail.com"
+        user?.delete()
+        // ...
     }
 
     transaction {

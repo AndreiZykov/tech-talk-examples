@@ -7,7 +7,6 @@ import org.jetbrains.exposed.dao.LongEntityClass
 class UserDao(id: EntityID<Long>) : LongEntity(id) {
     var username by UsersTable.username
     var email by UsersTable.email
-
     companion object : LongEntityClass<UserDao>(UsersTable)
 }
 

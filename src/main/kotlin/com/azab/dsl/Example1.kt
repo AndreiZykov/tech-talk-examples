@@ -1,6 +1,22 @@
 package com.azab.dsl
 
-class Node(var value: String? = null, var node: Node? = null)
+class Node(val value: String? = null, val node: Node? = null)
+
+class NodeBuilder(var value: String? = null, var node: Node? = null) {
+    fun build() : Node = Node(value, node)
+}
+
+fun node(block: NodeBuilder.() -> Unit): Node {
+    return NodeBuilder().apply(block).build()
+}
+
+fun node(value: String, block: NodeBuilder.() -> Unit): Node {
+    return NodeBuilder(value = value).apply(block).build()
+}
+
+fun String.toNode(): Node {
+    return Node(this)
+}
 
 fun main(args: Array<String>) {
 
@@ -17,9 +33,7 @@ fun main(args: Array<String>) {
 
     val head2 = node {
         value = "node1"
-        node = node("node2") {
-
-        }
+        node = node("node2") {}
     }
 
     val head3 = node {
@@ -27,23 +41,5 @@ fun main(args: Array<String>) {
         node = "node2".toNode()
     }
 
-    val head4 = node {
-        value = "node1"
-        node = "node2".toNode().apply {
-            node = "node3".toNode()
-        }
-    }
-
 }
 
-fun node(block: Node.() -> Unit): Node {
-    return Node().apply(block)
-}
-
-fun node(value: String, block: Node.() -> Unit): Node {
-    return Node(value = value).apply(block)
-}
-
-fun String.toNode(): Node {
-    return Node(this)
-}

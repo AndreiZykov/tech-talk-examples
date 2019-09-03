@@ -6,7 +6,7 @@ import org.jetbrains.exposed.sql.transactions.transaction
 
 object DB {
     fun init() {
-//        Database.connect("jdbc:h2:mem:test", driver = "org.h2.Driver")
+
         Database.connect(
             url = "jdbc:postgresql://localhost:5432/tech_talk_db",
             driver = "org.postgresql.Driver",
@@ -15,9 +15,11 @@ object DB {
         )
 
         transaction {
-            val tables = arrayOf(UsersTable, Users, Cities)
-//            SchemaUtils.drop(*tables.reversedArray())
+            val tables = arrayOf(Users, Cities)
             SchemaUtils.create(*tables)
+            SchemaUtils.createMissingTablesAndColumns(*tables)
+            SchemaUtils.drop(*tables.reversedArray())
+            // ...
         }
 
     }

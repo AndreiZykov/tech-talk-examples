@@ -3,11 +3,19 @@ package com.azab.ttspark
 import spark.Spark.path
 import spark.kotlin.get
 
-fun main(args: Array<String>) {
+fun main() {
 
     path("/api") {
-        get("/hello") {
-            "Hello World"
+        path("/v1"){
+            get("/user") {
+                "legacy user response"
+            }
+        }
+
+        path("/v2"){
+            get("/user") {
+                "user response"
+            }
         }
     }
 

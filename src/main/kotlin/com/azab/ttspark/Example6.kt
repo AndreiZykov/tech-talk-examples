@@ -11,7 +11,8 @@ fun main(args: Array<String>) {
     }
 
     get("/hello") {
-        "Hello World"
+        response.status(200)
+        "World"
     }
 
     after {
