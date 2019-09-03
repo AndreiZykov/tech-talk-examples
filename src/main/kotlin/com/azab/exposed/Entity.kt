@@ -15,8 +15,3 @@ object Cities : Table() {
     val id = integer("ID").autoIncrement().primaryKey() // Column<Int>
     val name = varchar("NAME", 50) // Column<String>
 }
-
-object UsersTable : LongIdTable("USERS1") {
-    val username = varchar(name = "USER_NAME", length = 250).uniqueIndex()
-    val email = varchar(name = "EMAIL", length = 250)
-}

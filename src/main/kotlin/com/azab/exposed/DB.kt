@@ -1,5 +1,6 @@
 package com.azab.exposed
 
+import com.azab.server.UsersTable
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.transactions.transaction
@@ -15,7 +16,7 @@ object DB {
         )
 
         transaction {
-            val tables = arrayOf(Users, Cities)
+            val tables = arrayOf(UsersTable, Users, Cities)
             SchemaUtils.create(*tables)
             SchemaUtils.createMissingTablesAndColumns(*tables)
             SchemaUtils.drop(*tables.reversedArray())
