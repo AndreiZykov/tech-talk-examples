@@ -1,13 +1,15 @@
 package com.azab.server
 
-import com.azab.util.toJson
 import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 import org.jetbrains.exposed.dao.EntityID
 import org.jetbrains.exposed.dao.LongEntity
 import org.jetbrains.exposed.dao.LongEntityClass
 import org.jetbrains.exposed.dao.LongIdTable
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.SchemaUtils
+import org.jetbrains.exposed.sql.Slf4jSqlDebugLogger
+import org.jetbrains.exposed.sql.addLogger
 import org.jetbrains.exposed.sql.transactions.transaction
 import spark.Spark.*
 
@@ -65,6 +67,7 @@ fun initDb() {
         password = "qqqqqq"
     )
     transaction {
+        addLogger(Slf4jSqlDebugLogger)
         SchemaUtils.drop(UsersTable)
         SchemaUtils.create(UsersTable)
     }
@@ -83,12 +86,7 @@ class UserDao(id: EntityID<Long>) : LongEntity(id) {
 
 data class UserObject(val id: Long, val username: String, val email: String)
 
-data class Response<Result>(
-    val status: String,
-    val message: String?,
-    val errorCode: String? = null,
-    val result: Result?
-)
+data class Response<Result>(val status: String, val message: String?, val errorCode: String? = null, val result: Result?)
 
 fun UserDao.toUserObject() = UserObject(id = id.value, username = username, email = email)
 
@@ -103,4 +101,6 @@ fun <Result> successResponse(message: String = "", result: Result? = null): Stri
 fun errorResponse(message: String): String {
     return Response<Any>(status = "error", errorCode = "800", message = message, result = null).toJson()
 }
+
+fun Any.toJson(): String = GsonBuilder().setPrettyPrinting().create().toJson(this)
 

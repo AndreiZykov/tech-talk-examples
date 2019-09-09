@@ -2,56 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15829fc5-9dc7-4a71-8ddf-d8f9a867cd22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/azab/util/Feedback.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/META-INF/ttexample.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/META-INF/ttexample.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Cities.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Cities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/DB.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/DB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/DaoKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example1Kt$main$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example1Kt$main$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example1Kt$main$1$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example1Kt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example1Kt$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example1Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example1Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example2Kt$main$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example2Kt$main$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example2Kt$main$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example2Kt$main$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example2Kt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example2Kt$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example2Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example2Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example3Kt$main$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example3Kt$main$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example3Kt$main$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example3Kt$main$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example3Kt$main$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example3Kt$main$1$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example3Kt$main$1$newYork$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example3Kt$main$1$newYork$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example3Kt$main$1$yonkers$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example3Kt$main$1$yonkers$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example3Kt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example3Kt$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example3Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example3Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example4Kt$main$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example4Kt$main$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example4Kt$main$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example4Kt$main$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example4Kt$main$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example4Kt$main$1$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example4Kt$main$1$haboken$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example4Kt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example4Kt$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example4Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example4Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example5Kt$main$1$user$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example5Kt$main$1$user$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example5Kt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example5Kt$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example5Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Example5Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/UserDao$Companion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/exposed/UsersTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example3Kt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example3Kt$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example3Kt$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example3Kt$main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example3Kt$main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example3Kt$main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example3Kt$main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example3Kt$main$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example3Kt$main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example3Kt$main$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example3Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example3Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example4Kt$main$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example4Kt$main$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example4Kt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example4Kt$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example4Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example4Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example6Kt$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example6Kt$main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example6Kt$main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example6Kt$main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example6Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example6Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example2Kt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example2Kt$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example2Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/Example2Kt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/ExampleKt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/ExampleKt$main$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/ExampleKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/azab/ttspark/ExampleKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
@@ -73,7 +34,9 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream" afterDir="false" />
@@ -98,11 +61,7 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
@@ -125,11 +84,25 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/exposed/DB.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/azab/exposed/DB.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/exposed/Dao.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/exposed/Entity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/azab/exposed/Entity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/exposed/Example5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/azab/exposed/Example5.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/dsl/Example1.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/dsl/Example2.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/exposed/DB.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/exposed/Entity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/exposed/Example1.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/exposed/Example2.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/exposed/Example3.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/exposed/Example4.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/exposed/Example5.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/server/Server.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/azab/server/Server.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/ttspark/Example.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/ttspark/Example2.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/ttspark/Example3.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/ttspark/Example4.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/ttspark/Example5.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/ttspark/Example6.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/ttspark/Example7.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/ttspark/Example8.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/azab/util/Ext.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/azab/util/Ext.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,6 +133,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="full.screen.before.presentation.mode" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -176,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.com.azab.server.ServerKt">
+  <component name="RunManager">
     <configuration name="com.azab.exposed.Example1Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="ttexample.main" />
       <option name="VM_PARAMETERS" />
@@ -229,14 +203,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.azab.server.ServerKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="com.azab.server.WebApplicationKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="ttexample.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.azab.server.ServerKt" />
+      <option name="MAIN_CLASS_NAME" value="com.azab.server.WebApplicationKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -247,11 +221,11 @@
       <item itemvalue="Kotlin.com.azab.exposed.Example2Kt" />
       <item itemvalue="Kotlin.com.azab.exposed.Example4Kt" />
       <item itemvalue="Kotlin.com.azab.exposed.Example5Kt" />
-      <item itemvalue="Kotlin.com.azab.server.ServerKt" />
+      <item itemvalue="Kotlin.com.azab.server.WebApplicationKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.com.azab.server.ServerKt" />
+        <item itemvalue="Kotlin.com.azab.server.WebApplicationKt" />
         <item itemvalue="Kotlin.com.azab.exposed.Example4Kt" />
         <item itemvalue="Kotlin.com.azab.exposed.Example2Kt" />
         <item itemvalue="Kotlin.com.azab.exposed.Example1Kt" />
@@ -269,7 +243,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567217062165</updated>
-      <workItem from="1567217066567" duration="22186000" />
+      <workItem from="1567217066567" duration="23278000" />
+      <workItem from="1567547128353" duration="6590000" />
+      <workItem from="1567737903708" duration="1676000" />
+      <workItem from="1568038655793" duration="38000" />
     </task>
     <task id="LOCAL-00001" summary="!">
       <created>1567366752810</created>
@@ -285,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567470270064</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="api done">
+      <created>1567538239488</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567538239488</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +280,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -304,6 +290,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="!" />
-    <option name="LAST_COMMIT_MESSAGE" value="!" />
+    <MESSAGE value="api done" />
+    <option name="LAST_COMMIT_MESSAGE" value="api done" />
   </component>
 </project>
